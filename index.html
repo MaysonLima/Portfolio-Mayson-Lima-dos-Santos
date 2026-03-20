@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="particulas"></div>
     <nav class="navegacao">
         <ul class="menu">
             <li><a href="#inicio" class="menu_link">Início</a></li>
@@ -22,7 +23,7 @@
 
         <img src="img/199ae020-bb93-4b64-945f-cd9da8ce53f8.png" alt="Foto de Mayson Lima dos Santos"
             class="foto_perfil"> </div>
-        <h1>Mayson Lima dos Santos</h1>
+        <h1>Mayson Lima</h1>
         <p class="cabecalho_subtitulo">Desenvolvedor FullStack em formação</p>
     </main>
 
@@ -69,19 +70,20 @@
 
         <section class="contatos" id="contatos">
             <h2 class="contatos_titulo">Contato</h2>
-            <form class="formulario_contato" id="formulario">
-                <div class="nome_form">
-                    <input placeholder="Nome">
+            <form class="formulario_contato" id="formulario" onsubmit="enviarWhats(event)">
+                <div class="grupo_form">
+                    <input placeholder="Nome" class="campo_form" id="nome">
                 </div>
                 <div class="grupo_form">
-                    <textarea placeholder="Digite sua mensagem aqui..." class="text_form"></textarea>
+                    <textarea placeholder="Digite sua mensagem aqui..." rows="6" class="campo_form" id="mensagem"></textarea>
                 </div>
-                <div><button type="submit">Enviar</button>
-                </div>
+                <button type="submit" class="botao_form">Enviar</button>
 
             </form>
 
         </section>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
