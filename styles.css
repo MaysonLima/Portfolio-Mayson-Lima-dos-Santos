@@ -340,7 +340,7 @@ footer{
 }
 
 /* ===== MOBILE ===== */
-@media (max-width: 768px){
+@media (max-width: 748px){
 
     .navegacao{
         padding: 1rem;
