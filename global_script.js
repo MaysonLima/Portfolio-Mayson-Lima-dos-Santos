@@ -175,7 +175,7 @@ window.addEventListener("resize", () => {
     canvas.height = window.innerHeight;
 
     // Ajusta número de partículas ao mudar tamanho da tela
-    const newNum = window.innerWidth < 768 ? 15 : 30;
+    const newNum = window.innerWidth < 768 ? 60 : 180;
     if(newNum > particles.length){
         for (let i = particles.length; i < newNum; i++){
             particles.push(new Particle());
