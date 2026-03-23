@@ -611,7 +611,7 @@ footer{
     display: flex;
     gap: 2rem;
     width: max-content;
-    padding: 1.5rem;
+    flex-wrap: nowrap; 
     animation: scroll 20s linear infinite;
 }
 
