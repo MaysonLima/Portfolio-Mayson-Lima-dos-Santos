@@ -2,15 +2,15 @@ function enviarWhats(event) {
     event.preventDefault();
 
     const nome = document.getElementById('nome').value;
-    const mensagem = document.getElementById('mensagem').value;
-    const telefone = '5577991508733';
+const mensagem = document.getElementById('mensagem').value;
+const telefone = '5577991508733';
 
-    const texto = `Olá, me chamo ${nome}, ${mensagem}`;
-    const msgformatada = encodeURIComponent(texto);
+const texto = `Olá, me chamo ${nome}, ${mensagem}`;
+const msgformatada = encodeURIComponent(texto);
 
-    const url = `https://wa.me/${telefone}?text=${msgformatada}`;
+const url = `https://wa.me/${telefone}?text=${msgformatada}`;
 
-    window.open(url, '_blank');
+window.open(url, '_blank');
 
 
 
@@ -21,8 +21,8 @@ const elemento = document.querySelector(".nome_mayson")
 
 let index = 0
 
-function digitar() {
-    if (index < texto.length) {
+function digitar(){
+    if(index < texto.length){
         elemento.textContent += texto.charAt(index)
         index++
         setTimeout(digitar, 200) // velocidade
@@ -39,7 +39,7 @@ let speed = 0.5;
 let targetSpeed = 0.5;
 
 
-function getHalfWidth() {
+function getHalfWidth(){
     return track.scrollWidth / 2;
 }
 
@@ -58,11 +58,11 @@ container.addEventListener('mouseleave', () => {
     targetSpeed = 0.5;
 });
 
-function animate() {
+function animate(){
     speed += (targetSpeed - speed) * 0.05;
     position -= speed;
 
-    if (position <= -halfWidth) {
+    if(position <= -halfWidth){
         position += halfWidth;
     }
 
@@ -76,48 +76,53 @@ setTimeout(() => {
     animate();
 }, 100);
 
+//particulas====================================================================
+
 window.addEventListener("load", () => {
     tsParticles.load("particles-js", {
-        fpsLimit: 60,
-        detectRetina: true,
-
-        particles: {
-            number: { value: 50 },
-            color: { value: "#491464" },
-            links: {
-                enable: true,
-                distance: 130,
-                opacity: 0.3
-            },
-            move: {
-                enable: true,
-                speed: 1.5
-            },
-            size: {
-                value: 2.5
-            }
-        },
-
-        interactivity: {
-            events: {
-                onHover: {
-                    enable: true,
-                    mode: "grab"
-                },
-                onClick: {
-                    enable: true,
-                    mode: "push"
-                }
-            },
-            modes: {
-                grab: {
-                    distance: 180,
-                    links: { opacity: 0.6 }
-                },
-                push: {
-                    quantity: 3
-                }
-            }
+  background: {
+    color: {
+      value: "transparent"
+    }
+  },
+  particles: {
+    number: {
+      value: 50
+    },
+    color: {
+      value: "#441f8097"
+    },
+    links: {
+      enable: true,
+      color: "#441f8097",
+      distance: 150,
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 1.5
+    },
+    size: {
+      value: 3
+    }
+  },
+  interactivity: {
+    events: {
+      onHover: {
+        enable: true,
+        mode: "grab"
+      }
+    },
+    modes: {
+      grab: {
+        distance: 200,
+        links: {
+          opacity: 0.8
         }
-    })
-});
+
+        
+      }
+    }
+  }
+})});
