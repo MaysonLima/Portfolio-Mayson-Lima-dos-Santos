@@ -176,7 +176,7 @@ h1{
 }
 
 .ver_mais_botao{
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: var(--primary);
     color: var(--light);
     padding: 1rem 2rem;
     border: none;
@@ -196,7 +196,7 @@ h1{
 }
 
 .botao_cv{
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: var(--primary);
     color: var(--light);
     padding: 1rem 2rem;
     border: none;
@@ -318,7 +318,7 @@ h1{
 }
 
 .botao_form{
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: var(--primary);
     color: var(--light);
     padding: 1rem 2rem;
     border: none;
@@ -372,6 +372,12 @@ footer{
 .img_contato{
     text-decoration: none;
     color: white;
+}
+
+.img_contato:hover{
+    color: var(--primary);
+    transform: translateY(-4px);
+    
 }
 
 

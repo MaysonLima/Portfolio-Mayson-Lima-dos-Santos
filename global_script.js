@@ -22,7 +22,7 @@ function digitar(){
     if(index < texto.length){
         elemento.textContent += texto.charAt(index);
         index++;
-        setTimeout(digitar, 200);
+        setTimeout(digitar, 110);
     }
 }
 
