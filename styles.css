@@ -495,10 +495,16 @@ footer{
     .tech-track{
         gap: 1.2rem;
     }
-    
+
     .tech-track span{
         font-size: 1.6rem;
     }
+
+    @media (hover: hover){
+    .tech-container:hover .tech-track{
+        animation-duration: 40s;
+    }
+}
 
 
 }
@@ -606,7 +612,7 @@ footer{
     gap: 2rem;
     width: max-content;
     padding: 1.5rem;
-    transition: transform 0.1s linear;
+    animation: scroll 20s linear infinite;
 }
 
 .tech-track.lento{
