@@ -494,6 +494,7 @@ footer{
 
     .tech-track{
         gap: 1.2rem;
+        flex-wrap: nowrap;
     }
     
     .tech-track span{
@@ -607,7 +608,6 @@ footer{
     width: max-content;
     padding: 1.5rem;
     transition: transform 0.1s linear;
-     flex-wrap: nowrap;
 }
 
 .tech-track.lento{
