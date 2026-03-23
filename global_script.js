@@ -58,7 +58,7 @@ container.addEventListener('mouseleave', () => {
     targetSpeed = 0.5;
 });
 
-function animate(){
+function animateCarrossel(){
     speed += (targetSpeed - speed) * 0.05;
     position -= speed;
 
@@ -68,12 +68,12 @@ function animate(){
 
     track.style.transform = `translateX(${position}px)`;
 
-    requestAnimationFrame(animate);
+    requestAnimationFrame(animateCarrossel);
 }
 
 setTimeout(() => {
     halfWidth = getHalfWidth();
-    animate();
+    animateCarrossel();
 }, 100);
 
 //particulas====================================================================
@@ -119,7 +119,7 @@ class Particle {
     }
 
     draw(){
-        ctx.fillStyle = "#4f46e5";
+        ctx.fillStyle = "rgba(49, 42, 171, 0)";
         ctx.beginPath();
         ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
         ctx.fill();
@@ -137,8 +137,8 @@ function connect(){
             let dy = particles[a].y - particles[b].y;
             let distance = dx * dx + dy * dy;
 
-            if(distance < 12000){
-                ctx.strokeStyle = "rgba(79,70,229,0.2)";
+            if(distance < 17000){
+                ctx.strokeStyle = "rgba(78, 70, 229, 0.42)";
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(particles[a].x, particles[a].y);
@@ -146,15 +146,13 @@ function connect(){
                 ctx.stroke();
             }
         }
-
-        // interação com mouse / dedo
         if(mouse.x && mouse.y){
             let dx = particles[a].x - mouse.x;
             let dy = particles[a].y - mouse.y;
             let distance = dx * dx + dy * dy;
 
             if(distance < 20000){
-                ctx.strokeStyle = "rgba(79,70,229,0.5)";
+                ctx.strokeStyle = "rgba(78, 70, 229, 0.21)";
                 ctx.beginPath();
                 ctx.moveTo(particles[a].x, particles[a].y);
                 ctx.lineTo(mouse.x, mouse.y);
