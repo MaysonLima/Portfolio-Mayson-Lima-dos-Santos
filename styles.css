@@ -495,18 +495,12 @@ footer{
     .tech-track{
         gap: 1.2rem;
     }
-
+    
     .tech-track span{
         font-size: 1.6rem;
     }
 
-}
 
-
-@media (hover: hover){
-    .tech-container:hover .tech-track{
-        animation-duration: 40s;
-    }
 }
 
 /* ===== TABLET ===== */
@@ -611,14 +605,18 @@ footer{
     display: flex;
     gap: 2rem;
     width: max-content;
-    flex-wrap: nowrap; 
-    animation: scroll 20s linear infinite;
+    padding: 1.5rem;
+    transition: transform 0.1s linear;
+     flex-wrap: nowrap;
 }
 
 .tech-track.lento{
     animation: scroll 40s linear infinite;
 }
 
+.tech-container:hover .tech-track{
+    animation-duration: 40s;
+}
 
 .tech-track span{
     font-size: 2.5rem;
