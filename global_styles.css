@@ -24,7 +24,7 @@ body{
      overflow-x: hidden;
 }
 
-.particulas{
+#particles{
     position: fixed;
     top: 0;
     left: 0;
@@ -92,7 +92,7 @@ body{
     min-width: 200px;
     font-size: 4rem;
     color: var(--primary);
-    text-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+    text-shadow: 0 0 20px var(--secondary);
     animation: piscar 1s infinite;
     
 }
