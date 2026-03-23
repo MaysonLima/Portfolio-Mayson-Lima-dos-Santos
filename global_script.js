@@ -81,11 +81,11 @@ canvas.height = window.innerHeight;
 let numParticles;
 function getNumParticles() {
     if(window.innerWidth < 480){
-        return 10; // mobile pequeno
+        return 20; // mobile pequeno
     } else if(window.innerWidth < 768){
-        return 20; // mobile médio
+        return 30; // mobile médio
     } else {
-        return 60; // desktop
+        return 75; // desktop
     }
 }
 
@@ -155,7 +155,7 @@ function connectParticles(){
             let dy = particles[a].y - mouse.y;
             let distance = dx * dx + dy * dy;
 
-            if(distance < 20000){
+            if(distance < 19000){
                 ctx.strokeStyle = "rgba(78, 70, 229, 0.21)";
                 ctx.beginPath();
                 ctx.moveTo(particles[a].x, particles[a].y);
