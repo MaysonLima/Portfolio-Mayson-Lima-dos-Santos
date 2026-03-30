@@ -1,2 +1,2 @@
-# Portifóilio Mayson Lima dos Santos
-Portifolio de projetos (Em desenvolvimento)
+# Portfóilio Mayson Lima dos Santos
+Portfolio de projetos (Em desenvolvimento)
