@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Lead Qualifier | Portifolio Mayson Lima</title>
+    <title>AI Lead Qualifier | Portifólio Mayson Lima</title>
     <link rel="stylesheet" href="global_styles.css">
+  <link rel="stylesheet" href="css/pages/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
     <link rel="shortcut icon" href="img/fovicon.png" type="image/x-icon">
 </head>
 
@@ -13,11 +15,33 @@
     <canvas id="particles"></canvas>
 
     <nav class="navegacao">
+        <a href="index.html#inicio" class="nav-brand" aria-label="Página inicial de Mayson Lima">
+            <span class="brand-mark" aria-hidden="true"><img src="img/logo_ML.jpeg" alt=""></span>
+            <span class="brand-title">
+                <span class="brand-name">Mayson Lima</span>
+                <span class="brand-separator" aria-hidden="true">|</span>
+                <span class="brand-role">Full-Stack Developer</span>
+            </span>
+        </a>
         <ul class="menu">
-            <li><a href="index.html#inicio" class="menu_link">Inicio</a></li>
-            <li><a href="index.html#projetos" class="menu_link">Projetos</a></li>
-            <li><a href="index.html#contatos" class="menu_link">Contato</a></li>
+            <li><a href="index.html#inicio" class="menu_link">Início</a></li>
+            <li><a href="index.html#sobre" class="menu_link">Sobre</a></li>
+            <li><a href="index.html#projetos" class="menu_link active">Projetos</a></li>
+            <li><a href="resume.html" class="menu_link">Resumo</a></li>
+            <li><a href="contact.html" class="menu_link">Contato</a></li>
         </ul>
+        <div class="nav-actions">
+            <div class="lang-switch" role="group" aria-label="Alternar idioma">
+                <button type="button" class="lang-option is-active" data-lang-target="pt" aria-pressed="true">PT</button>
+                <button type="button" class="lang-option" data-lang-target="en" aria-pressed="false">EN</button>
+            </div>
+            <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub de Mayson Lima">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn de Mayson Lima">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+        </div>
     </nav>
 
     <main class="projeto_main">
@@ -26,34 +50,51 @@
                 <span class="projeto_tag">Projeto full stack com IA</span>
                 <h1 class="projeto_titulo">AI Lead Qualifier</h1>
                 <p class="projeto_resumo">
-                    O AI Lead Qualifier e um projeto de portfolio que simula um fluxo de qualificacao de leads com IA.
-                    O frontend em React envia os dados para uma API em Node.js e Express, que analisa a necessidade
-                    comercial do lead e devolve um resultado estruturado com status, score, motivo e abordagem sugerida.
+                    O AI Lead Qualifier é um projeto de portfólio que simula um fluxo completo de qualificação de leads com IA.
+                    O frontend em React envia os dados para uma API em Node.js e Express, que analisa a necessidade comercial e retorna um parecer pronto.
                 </p>
 
                 <div class="projeto_acoes">
-                    <a href="https://github.com/MaysonLima/AI-Lead-Qualifier" class="botao_cv">Repositorio no GitHub</a>
+                    <a href="https://github.com/MaysonLima/AI-Lead-Qualifier" class="botao_cv">Repositório no GitHub</a>
                     <a href="index.html#projetos" class="botao_secundario">Voltar aos projetos</a>
                 </div>
 
                 <div class="projeto_lista_destaque">
                     <article>
                         <h3>Fluxo completo</h3>
-                        <p>Captura os dados do lead, envia para a API e apresenta a resposta de forma clara no frontend.</p>
+                        <p>Do cadastro do lead à análise da necessidade comercial, com resposta estruturada e fácil de ler.</p>
                     </article>
                     <article>
-                        <h3>Dois modos de IA</h3>
-                        <p>O backend funciona com provider mock para testes e tambem com OpenAI para simulacoes reais.</p>
+                        <h3>IA em dois modos</h3>
+                        <p>Simula o processo com provider mock para testes e também integra com OpenAI para resultados reais.</p>
                     </article>
                     <article>
-                        <h3>Uso pratico</h3>
-                        <p>Mostra uma aplicacao de IA voltada para triagem, qualificacao e priorizacao comercial.</p>
+                        <h3>Entrega prática</h3>
+                        <p>Gera status, score, motivo e abordagem sugerida para tornar a qualificação de leads mais eficiente.</p>
                     </article>
                 </div>
             </div>
 
             <div class="projeto_card_visual">
                 <img src="img/image_ex01.png" alt="Tela principal do projeto AI Lead Qualifier">
+            </div>
+        </section>
+
+        <section class="projeto_bloco">
+            <h2>O que o AI Lead Qualifier entrega</h2>
+            <div class="projeto_lista_destaque">
+                <article>
+                    <h3>Formulário intuitivo</h3>
+                    <p>Pergunta o nome da empresa e a necessidade comercial de forma clara e direta.</p>
+                </article>
+                <article>
+                    <h3>Análise automática</h3>
+                    <p>Processa os dados no backend e devolve uma resposta estruturada com recomendação.</p>
+                </article>
+                <article>
+                    <h3>Resultados prontos</h3>
+                    <p>Apresenta score, status, motivo e abordagem sugerida para apoiar decisões comerciais.</p>
+                </article>
             </div>
         </section>
 
@@ -135,19 +176,34 @@
 
 
     </main>
-
-    <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" class="img_contato"><i
-                    class="fa-brands fa-square-linkedin fa-2x"></i></a>
-            <a href="https://github.com/MaysonLima" target="_blank" class="img_contato"><i
-                    class="fa-brands fa-square-github fa-2x"></i></a>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-brand">mayson.lima</div>
+                <div class="footer-sub" data-i18n="footerSub">Software developer, Jacaraci, BA</div>
+            </div>
+            <nav class="footer-center" aria-label="Footer navigation">
+                <a href="index.html#projetos" data-i18n="footerProjects">Projects</a>
+                <a href="resume.html" data-i18n="footerResume">Resumo</a>
+                <a href="index.html#sobre" data-i18n="footerAbout">About</a>
+            </nav>
+            <div class="footer-right">
+                <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="contact.html" data-i18n="footerEmail">Email</a>
+            </div>
         </div>
-        <h2>Mayson Lima</h2>
+        <div class="footer-bottom">
+            <div>© 2026 Mayson Lima</div>
+            <div data-i18n="footerBuilt">Designed and built from scratch.</div>
+        </div>
     </footer>
 
     <script src="global_script.js" defer></script>
+  <script src="js/pages/projects.js" defer></script>
     <script src="https://kit.fontawesome.com/f692f130e5.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+

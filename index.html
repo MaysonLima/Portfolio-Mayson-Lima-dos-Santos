@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mayson Lima | Portifólio </title>
     <link rel="stylesheet" href="global_styles.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/responsive.css">
     <link rel="shortcut icon" href="img/fovicon.png" type="image/x-icon">
 </head>
 
@@ -14,127 +16,119 @@
    <canvas id="particles"></canvas>
 
     <nav class="navegacao">
+        <a href="index.html#inicio" class="nav-brand" aria-label="Página inicial de Mayson Lima">
+            <span class="brand-mark" aria-hidden="true"><img src="img/logo_ML.jpeg" alt=""></span>
+            <span class="brand-title">
+                <span class="brand-name">Mayson Lima</span>
+                <span class="brand-separator" aria-hidden="true">|</span>
+                <span class="brand-role">Full-Stack Developer</span>
+            </span>
+        </a>
         <ul class="menu">
-            <li><a href="#inicio" class="menu_link">Início</a></li>
+            <li><a href="#inicio" class="menu_link active">Início</a></li>
             <li><a href="#sobre" class="menu_link">Sobre</a></li>
             <li><a href="#projetos" class="menu_link">Projetos</a></li>
-            <li><a href="#contatos" class="menu_link">Contato</a></li>
+            <li><a href="resume.html" class="menu_link">Resumo</a></li>
+            <li><a href="contact.html" class="menu_link">Contato</a></li>
         </ul>
+        <div class="nav-actions">
+            <div class="lang-switch" role="group" aria-label="Alternar idioma">
+                <button type="button" class="lang-option is-active" data-lang-target="pt" aria-pressed="true">PT</button>
+                <button type="button" class="lang-option" data-lang-target="en" aria-pressed="false">EN</button>
+            </div>
+            <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub de Mayson Lima">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn de Mayson Lima">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+        </div>
     </nav>
 
     <main id="inicio" class="cabecalho">
-
         <div class="hero">
-
             <div class="hero-texto">
                 <h1 class="introducao_hero">
-                    <span class="titulo_introducao">OLÁ, EU SOU</span><br>
+                    <span class="titulo_introducao" data-i18n="heroGreeting">OLÁ, EU SOU</span><br>
                     <span class="nome_mayson"></span><br>
-                    <span class="titulo_introducao_2">DESENVOLVEDOR FULL-STACK</span>
+                    <span class="titulo_introducao_2" data-i18n="heroRole">DESENVOLVEDOR FULL-STACK EM FORMAÇÃO</span>
                 </h1>
-                <a href="#projetos" 
-                class="botao_cv">Ver Projetos</a>
-                <a href="arquivo/Mayson_Lima_dos_Santos_CV.pdf" download="Mayson_Lima_dos_Santos_CV.pdf"
-                    class="botao_cv">Baixar Currículo</a>
+                <a href="#sobre" class="scroll-indicator" aria-label="Descer para a próxima seção">
+                    <span class="scroll-indicator-text" data-i18n="scrollHint">Role para explorar</span>
+                </a>
             </div>
-
         </div>
-
     </main>
 
-
     <section id="sobre" class="sobre">
-
-
         <div class="sobre_container">
-
             <div class="sobre_imagem">
                 <img src="img/199ae020-bb93-4b64-945f-cd9da8ce53f8.png" alt="Foto de Mayson" class="foto_sobre">
             </div>
 
             <div class="sobre_texto">
-                <p class="sobre_paragrafo">
+                <p class="sobre_paragrafo"><span data-i18n="aboutP1">• Estudante de Análise e Desenvolvimento de Sistemas na PUC Minas.</span></p>
+                <p class="sobre_paragrafo"><span data-i18n="aboutP2">• Construo projetos para aplicar na prática o que estudo e evoluir constantemente.</span></p>
+                <p class="sobre_paragrafo"><span data-i18n="aboutP3">• Vivência com atendimento ao público, desenvolvendo responsabilidade, comunicação e resolução de problemas.</span></p>
+                <p class="sobre_paragrafo"><span data-i18n="aboutP4">• Busco minha primeira oportunidade como desenvolvedor para crescer na área e contribuir com soluções reais.</span></p>
 
-                    • Estudante de Análise e Desenvolvimento de Sistemas na PUC Minas.</p>
-                <p class="sobre_paragrafo">
-
-                    • Construo projetos para aplicar na prática o que estudo e evoluir constantemente.</p>
-                <p class="sobre_paragrafo">
-
-                    • Vivência com atendimento ao público, desenvolvendo responsabilidade, comunicação e resolução de
-                    problemas.</p>
-                <p class="sobre_paragrafo">
-
-                    • Busco minha primeira oportunidade como desenvolvedor para crescer na área e contribuir com
-                    soluções
-                    reais.</p>
-                    
-                    <div>
+                <div class="tech-container">
+                    <div class="tech-track">
+                        <span><i class="fa-brands fa-html5"></i></span>
+                        <span><i class="fa-brands fa-css3-alt"></i></span>
+                        <span><i class="fa-brands fa-js"></i></span>
+                        <span><i class="fa-brands fa-react"></i></span>
+                        <span><i class="fa-brands fa-node-js"></i></span>
+                        <span><i class="fa-brands fa-java"></i></span>
+                        <span><i class="fa-brands fa-python"></i></span>
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <span><i class="fa-brands fa-postgresql"></i></span>
+                        <span><i class="fa-brands fa-aws"></i></span>
+                        <span><i class="fa-brands fa-html5"></i></span>
+                        <span><i class="fa-brands fa-css3-alt"></i></span>
+                        <span><i class="fa-brands fa-js"></i></span>
+                        <span><i class="fa-brands fa-react"></i></span>
+                        <span><i class="fa-brands fa-node-js"></i></span>
+                        <span><i class="fa-brands fa-python"></i></span>
+                        <span><i class="fa-brands fa-java"></i></span>
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <span><i class="fa-brands fa-postgresql"></i></span>
+                        <span><i class="fa-brands fa-aws"></i></span>
                     </div>
-                    
-                    <div class="tech-container">
-                        <div class="tech-track">
-                            <span><i class="fa-brands fa-html5"></i></span>
-                            <span><i class="fa-brands fa-css3-alt"></i></span>
-            <span><i class="fa-brands fa-js"></i></span>
-            <span><i class="fa-brands fa-react"></i></span>
-            <span><i class="fa-brands fa-node-js"></i></span>
-            <span><i class="fa-brands fa-java"></i></span>
-            <span><i class="fa-brands fa-python"></i></span>
-            <span><i class="fa-brands fa-github"></i></span>
-            <span><i class="fa-brands fa-postgresql"></i></span>
-            <span><i class="fa-brands fa-aws"></i></span>
-            
-            <span><i class="fa-brands fa-html5"></i></span>
-            <span><i class="fa-brands fa-css3-alt"></i></span>
-            <span><i class="fa-brands fa-js"></i></span>
-            <span><i class="fa-brands fa-react"></i></span>
-            <span><i class="fa-brands fa-node-js"></i></span>
-            <span><i class="fa-brands fa-python"></i></span>
-            <span><i class="fa-brands fa-java"></i></span>
-            <span><i class="fa-brands fa-github"></i></span>
-            <span><i class="fa-brands fa-postgresql"></i></span>
-            <span><i class="fa-brands fa-aws"></i></span>
-        </div>
-        
-    </div>
-    <button class="ver_mais_botao">
-    <a href="mais_sobre_mayson.html" class="ver_mais_link">Ver Mais</a>
-    </button>
-</div>
+                </div>
 
-
-                
-            
+                <button class="ver_mais_botao">
+                    <a href="mais_sobre_mayson.html" class="ver_mais_link" data-i18n="seeMore">Ver Mais</a>
+                </button>
             </div>
-
+        </div>
     </section>
 
-
     <section id="projetos" class="projetos">
-        <h2 class="projetos_titulo">Meus Projetos</h2>
+        <h2 class="projetos_titulo" data-i18n="projectsTitle">Meus Projetos</h2>
         <div class="projetos_caixa">
             <a href="ai_lead_qualifier.html" class="projeto_link">
                 <div class="projetos_card">
                     <img src="img/image_ex01.png" alt="Preview do projeto AI Lead Qualifier" class="projetos_imagem">
                     <div class="caixa_textos_projeto">
                         <h3 class="info_projetos">AI Lead Qualifier</h3>
-                        <p class="paragrafo_projetos">Projeto full stack com React, Node.js, Express e OpenAI para simular a qualificacao inteligente de leads comerciais.</p>
+                        <p class="paragrafo_projetos" data-i18n="projectAiDesc">Projeto full stack com React, Node.js, Express e OpenAI para simular a qualificação inteligente de leads comerciais.</p>
                         <div class="tecnologias_card">
                             <span class="tecnologia_tag">React</span>
                             <span class="tecnologia_tag">Node.js</span>
                             <span class="tecnologia_tag">Express</span>
                             <span class="tecnologia_tag">OpenAI API</span>
                         </div>
-                        <span class="projeto_cta">Ver detalhes do projeto</span>
+                        <span class="projeto_cta" data-i18n="projectDetails">Ver detalhes do projeto</span>
                     </div>
                 </div>
             </a>
+
             <div class="projetos_card">
                 <img src="img/default.png" alt="Projeto 2" class="projetos_imagem">
                 <div class="caixa_textos_projeto">
-                    <h3 class="info_projetos">Sermo -Em desenvolvimento-</h3>
-                    <p class="paragrafo_projetos">Projeto sendo elaborado ultilizando React, Node.js, Tailwind e PostgreSQL.</p>
+                    <h3 class="info_projetos" data-i18n="projectSermoTitle">Sermo - Em desenvolvimento</h3>
+                    <p class="paragrafo_projetos" data-i18n="projectSermoDesc">Projeto sendo elaborado utilizando React, Node.js, Tailwind e PostgreSQL.</p>
                     <div class="tecnologias_card">
                         <span class="tecnologia_tag">React</span>
                         <span class="tecnologia_tag">Node.js</span>
@@ -143,45 +137,54 @@
                     </div>
                 </div>
             </div>
+
             <div class="projetos_card">
-                <img src="img/default.png" alt="Projeto 3" class="projetos_imagem">
-                <div class="caixa_textos_projeto">
-                    <h3 class="info_projetos">Connectaeasy -Em desenvolvimento- </h3>
-                    <p class="paragrafo_projetos">Projeto acadêmico sendo elaborado. </p>
-                </div>
+                <a href="connectaeasy.html" class="projeto_link">
+                    <img src="img/connectaeasy.png" alt="Projeto 3" class="projetos_imagem" id="connectaeasy">
+                    <div class="caixa_textos_projeto">
+                        <h3 class="info_projetos" data-i18n="projectConnectTitle">Connecta Easy - Em desenvolvimento</h3>
+                        <p class="paragrafo_projetos" data-i18n="projectConnectDesc">Projeto acadêmico sendo elaborado em equipe para a disciplina de projetos no curso de Análise e Desenvolvimento de Sistemas da PUC Minas.</p>
+                        <div class="tecnologias_card">
+                            <span class="tecnologia_tag">HTML</span>
+                            <span class="tecnologia_tag">CSS</span>
+                            <span class="tecnologia_tag">Javascript</span>
+                            <span class="tecnologia_tag">C#</span>
+                        </div>
+                        <span class="projeto_cta" data-i18n="projectDetails">Ver detalhes do projeto</span>
+                    </div>
+                </a>
             </div>
-             
         </div>
     </section>
 
-    <section class="contatos" id="contatos">
-        <h2 class="contatos_titulo">Contato</h2>
-        <form class="formulario_contato" id="formulario" onsubmit="enviarWhats(event)">
-            <div class="grupo_form">
-                <input placeholder="Nome" class="campo_form" id="nome">
+    <!-- contato moved to contact.html -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-brand">mayson.lima</div>
+                <div class="footer-sub" data-i18n="footerSub">Software developer, Jacaraci, BA</div>
             </div>
-            <div class="grupo_form">
-                <textarea placeholder="Digite sua mensagem aqui..." rows="6" class="campo_form"
-                    id="mensagem"></textarea>
+            <nav class="footer-center" aria-label="Footer navigation">
+                <a href="index.html#projetos" data-i18n="footerProjects">Projects</a>
+                <a href="resume.html" data-i18n="footerResume">Resumo</a>
+                <a href="index.html#sobre" data-i18n="footerAbout">About</a>
+            </nav>
+            <div class="footer-right">
+                <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="contact.html" data-i18n="footerEmail">Email</a>
             </div>
-            <button type="submit" class="botao_form">Enviar</button>
-
-        </form>
-
-    </section>
-
-    <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" class="img_contato"><i
-                    class="fa-brands fa-square-linkedin fa-2x"></i></a>
-            <a href="https://github.com/MaysonLima" target="_blank" class="img_contato"><i
-                    class="fa-brands fa-square-github fa-2x"></i></a>
         </div>
-        <h2>Mayson Lima</h2>
+        <div class="footer-bottom">
+            <div>© 2026 Mayson Lima</div>
+            <div data-i18n="footerBuilt">Designed and built from scratch.</div>
+        </div>
     </footer>
 
     <script src="global_script.js" defer></script>
+  <script src="js/pages/home.js" defer></script>
     <script src="https://kit.fontawesome.com/f692f130e5.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+

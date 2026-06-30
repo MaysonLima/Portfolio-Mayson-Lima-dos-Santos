@@ -1,0 +1,140 @@
+/* Resume page overrides */
+.resume_section{
+    width: min(1260px, calc(100% - 2rem));
+    margin: clamp(7.25rem, 9vw, 8.8rem) auto clamp(4rem, 7vw, 6rem);
+}
+
+.resume_header{
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) auto;
+    align-items: end;
+    gap: clamp(2.5rem, 8vw, 8rem);
+    margin-bottom: clamp(3rem, 5vw, 4.5rem);
+}
+
+.resume_title_small{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 1.35rem;
+    color: rgba(148, 163, 184, 0.88);
+    font-family: "Cascadia Mono", "Fira Code", Consolas, monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+}
+
+.resume_title_small::before{
+    content: "";
+    width: 2.6rem;
+    height: 1px;
+    background: rgba(148, 163, 184, 0.28);
+}
+
+.resume_name{
+    color: rgba(248, 250, 252, 0.96);
+    font-size: clamp(2.15rem, 4.4vw, 3.6rem);
+    line-height: 1;
+    letter-spacing: 0;
+    text-shadow: 0 24px 80px rgba(37, 99, 235, 0.2);
+}
+
+.resume_intro{
+    max-width: 660px;
+    margin-top: 1.55rem;
+    color: rgba(226, 232, 240, 0.72);
+    font-size: clamp(1.05rem, 1.55vw, 1.28rem);
+    font-weight: 650;
+    line-height: 1.75;
+}
+
+.resume_actions{
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.2rem;
+    padding-bottom: 0.3rem;
+}
+
+.resume_cta,
+.resume_open{
+    min-height: 3.35rem;
+    border-radius: 7px;
+    font-family: "Cascadia Mono", "Fira Code", Consolas, monospace;
+    font-size: 0.95rem;
+}
+
+.resume_cta{
+    padding: 0 1.35rem;
+    border: 1px solid rgba(96, 165, 250, 0.52);
+    background: rgba(15, 23, 42, 0.42);
+    box-shadow: none;
+}
+
+.resume_cta:hover{
+    background: rgba(37, 99, 235, 0.18);
+    box-shadow: 0 16px 38px rgba(37, 99, 235, 0.16);
+}
+
+.resume_open{
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: rgba(203, 213, 225, 0.76);
+}
+
+.resume_pages{
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.resume_preview{
+    width: min(100%, 920px);
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0 28px 90px rgba(2, 6, 23, 0.38);
+}
+
+@media (max-width: 900px){
+    .resume_section{
+        margin-top: 12rem;
+    }
+
+    .resume_header{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .resume_actions{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 760px){
+    .resume_section{
+        width: min(100% - 1.25rem, 900px);
+        margin-top: 12.8rem;
+    }
+    .resume_name{
+        font-size: clamp(2.4rem, 13vw, 4rem);
+    }
+    .resume_intro{
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+    .resume_actions{
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .resume_cta,
+    .resume_open{
+        width: 100%;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    .resume_preview{
+        width: 100%;
+        border-radius: 6px;
+    }
+}

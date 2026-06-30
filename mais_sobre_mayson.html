@@ -1,11 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mais sobre Mayson Lima</title>
+    <link rel="stylesheet" href="global_styles.css">
+  <link rel="stylesheet" href="css/pages/about.css">
+  <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/fovicon.png" type="image/x-icon">
 </head>
-<body>
-    
+<body class="pagina_sobre_mayson">
+    <canvas id="particles"></canvas>
+
+    <nav class="navegacao">
+        <a href="index.html#inicio" class="nav-brand" aria-label="Página inicial de Mayson Lima">
+            <span class="brand-mark" aria-hidden="true"><img src="img/logo_ML.jpeg" alt=""></span>
+            <span class="brand-title">
+                <span class="brand-name">Mayson Lima</span>
+                <span class="brand-separator" aria-hidden="true">|</span>
+                <span class="brand-role">Full-Stack Developer</span>
+            </span>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html#inicio" class="menu_link">Início</a></li>
+            <li><a href="index.html#sobre" class="menu_link active">Sobre</a></li>
+            <li><a href="index.html#projetos" class="menu_link">Projetos</a></li>
+            <li><a href="resume.html" class="menu_link">Resumo</a></li>
+            <li><a href="contact.html" class="menu_link">Contato</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="lang-switch" role="group" aria-label="Alternar idioma">
+                <button type="button" class="lang-option is-active" data-lang-target="pt" aria-pressed="true">PT</button>
+                <button type="button" class="lang-option" data-lang-target="en" aria-pressed="false">EN</button>
+            </div>
+            <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub de Mayson Lima">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn de Mayson Lima">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main class="more_main">
+        <section class="more_hero">
+            <div class="more_copy">
+                <div class="contato_eyebrow" data-i18n="moreEyebrow">Mais sobre mim</div>
+                <h1 data-i18n="moreTitle">Desenvolvedor full-stack em evolução.</h1>
+                <p data-i18n="moreIntro">Estudante de Análise e Desenvolvimento de Sistemas na PUC Minas, construindo projetos práticos em front-end e back-end. Busco entregar interfaces claras, APIs confiáveis e soluções técnicas focadas em valor real.</p>
+
+                <div class="more_stats">
+                    <article>
+                        <strong>PUC Minas</strong>
+                        <span data-i18n="moreStat1">ADS em andamento</span>
+                    </article>
+                    <article>
+                        <strong>Jacaraci, BA</strong>
+                        <span data-i18n="moreStat2">base no interior da Bahia</span>
+                    </article>
+                    <article>
+                        <strong>Full-stack</strong>
+                        <span data-i18n="moreStat3">React, Node, Java, Python e SQL</span>
+                    </article>
+                </div>
+            </div>
+            <aside class="more_profile" aria-label="Resumo profissional de Mayson Lima">
+                <div class="more_profile_header">
+                    <span class="more_profile_kicker" data-i18n="moreProfileKicker">Perfil</span>
+                    <h2 data-i18n="moreProfileTitle">Desenvolvimento com clareza, curiosidade e consistência.</h2>
+                </div>
+                <div class="more_profile_list">
+                    <article>
+                        <span data-i18n="moreProfile1Label">Local</span>
+                        <strong>Jacaraci, BA</strong>
+                        <p data-i18n="moreProfile1Text">Estudando remotamente, criando projetos reais e buscando minha primeira oportunidade em desenvolvimento.</p>
+                    </article>
+                    <article>
+                        <span data-i18n="moreProfile2Label">Foco</span>
+                        <strong>Full-stack</strong>
+                        <p data-i18n="moreProfile2Text">Interfaces responsivas, APIs úteis, integração com dados e soluções pensadas para pessoas.</p>
+                    </article>
+                    <article>
+                        <span data-i18n="moreProfile3Label">Stack</span>
+                        <strong>React · Node · Java · SQL</strong>
+                        <p data-i18n="moreProfile3Text">Tecnologias que venho praticando em projetos acadêmicos e pessoais.</p>
+                    </article>
+                </div>
+            </aside>
+        </section>
+
+        <section class="more_sections">
+            <article class="more_card">
+                <h2 data-i18n="moreBlock1Title">Como eu trabalho</h2>
+                <p data-i18n="moreBlock1Text">Gosto de entender o problema antes de escrever a solução. Minha experiência com atendimento ao público fortaleceu comunicação, responsabilidade e escuta, pontos que levo para o desenvolvimento.</p>
+            </article>
+            <article class="more_card">
+                <h2 data-i18n="moreBlock2Title">O que venho construindo</h2>
+                <p data-i18n="moreBlock2Text">Tenho projetos com React, Node.js, Express, OpenAI API, C#, PostgreSQL e interfaces responsivas. Cada entrega é uma forma de praticar arquitetura, experiência do usuário e integração entre front-end e back-end.</p>
+            </article>
+            <article class="more_card">
+                <h2 data-i18n="moreBlock3Title">Próximo passo</h2>
+                <p data-i18n="moreBlock3Text">Busco minha primeira oportunidade como desenvolvedor para aprender com um time, contribuir em produtos reais e evoluir com consistência.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-brand">mayson.lima</div>
+                <div class="footer-sub" data-i18n="footerSub">Software developer, Jacaraci, BA</div>
+            </div>
+            <nav class="footer-center" aria-label="Footer navigation">
+                <a href="index.html#projetos" data-i18n="footerProjects">Projects</a>
+                <a href="resume.html" data-i18n="footerResume">Resumo</a>
+                <a href="index.html#sobre" data-i18n="footerAbout">About</a>
+            </nav>
+            <div class="footer-right">
+                <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="contact.html" data-i18n="footerEmail">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2026 Mayson Lima</div>
+            <div data-i18n="footerBuilt">Designed and built from scratch.</div>
+        </div>
+    </footer>
+    <script src="global_script.js" defer></script>
+  <script src="js/pages/about.js" defer></script>
+    <script src="https://kit.fontawesome.com/f692f130e5.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

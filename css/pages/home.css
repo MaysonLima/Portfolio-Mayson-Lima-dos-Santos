@@ -1,0 +1,12 @@
+/* Home page overrides */
+
+@media (max-width: 760px){
+    .scroll-indicator{
+        margin-top: 1.75rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+    }
+    .tech-track span{
+        font-size: 2rem;
+    }
+}

@@ -1,22 +1,47 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sermo | Portifolio Mayson Lima</title>
+    <title>Sermo | Portifólio Mayson Lima</title>
     <link rel="stylesheet" href="global_styles.css">
+  <link rel="stylesheet" href="css/pages/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/fovicon.png" type="image/x-icon">
 </head>
 
 <body class="pagina_projeto">
     <canvas id="particles"></canvas>
 
     <nav class="navegacao">
+        <a href="index.html#inicio" class="nav-brand" aria-label="Página inicial de Mayson Lima">
+            <span class="brand-mark" aria-hidden="true"><img src="img/logo_ML.jpeg" alt=""></span>
+            <span class="brand-title">
+                <span class="brand-name">Mayson Lima</span>
+                <span class="brand-separator" aria-hidden="true">|</span>
+                <span class="brand-role">Full-Stack Developer</span>
+            </span>
+        </a>
         <ul class="menu">
-            <li><a href="index.html#inicio" class="menu_link">Inicio</a></li>
-            <li><a href="index.html#projetos" class="menu_link">Projetos</a></li>
-            <li><a href="index.html#contatos" class="menu_link">Contato</a></li>
+            <li><a href="index.html#inicio" class="menu_link">Início</a></li>
+            <li><a href="index.html#sobre" class="menu_link">Sobre</a></li>
+            <li><a href="index.html#projetos" class="menu_link active">Projetos</a></li>
+            <li><a href="resume.html" class="menu_link">Resumo</a></li>
+            <li><a href="contact.html" class="menu_link">Contato</a></li>
         </ul>
+        <div class="nav-actions">
+            <div class="lang-switch" role="group" aria-label="Alternar idioma">
+                <button type="button" class="lang-option is-active" data-lang-target="pt" aria-pressed="true">PT</button>
+                <button type="button" class="lang-option" data-lang-target="en" aria-pressed="false">EN</button>
+            </div>
+            <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub de Mayson Lima">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn de Mayson Lima">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+        </div>
     </nav>
 
     <main class="projeto_main">
@@ -31,7 +56,7 @@
                 </p>
 
                 <div class="projeto_acoes">
-                    <a href="https://github.com/MaysonLima/AI-Lead-Qualifier" class="botao_cv">Repositorio no GitHub</a>
+                    <a href="https://github.com/MaysonLima/AI-Lead-Qualifier" class="botao_cv">Repositório no GitHub</a>
                     <a href="index.html#projetos" class="botao_secundario">Voltar aos projetos</a>
                 </div>
 
@@ -134,19 +159,34 @@
 
 
     </main>
-
-    <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" class="img_contato"><i
-                    class="fa-brands fa-square-linkedin fa-2x"></i></a>
-            <a href="https://github.com/MaysonLima" target="_blank" class="img_contato"><i
-                    class="fa-brands fa-square-github fa-2x"></i></a>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-brand">mayson.lima</div>
+                <div class="footer-sub" data-i18n="footerSub">Software developer, Jacaraci, BA</div>
+            </div>
+            <nav class="footer-center" aria-label="Footer navigation">
+                <a href="index.html#projetos" data-i18n="footerProjects">Projects</a>
+                <a href="resume.html" data-i18n="footerResume">Resumo</a>
+                <a href="index.html#sobre" data-i18n="footerAbout">About</a>
+            </nav>
+            <div class="footer-right">
+                <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="contact.html" data-i18n="footerEmail">Email</a>
+            </div>
         </div>
-        <h2>Mayson Lima</h2>
+        <div class="footer-bottom">
+            <div>© 2026 Mayson Lima</div>
+            <div data-i18n="footerBuilt">Designed and built from scratch.</div>
+        </div>
     </footer>
 
     <script src="global_script.js" defer></script>
+  <script src="js/pages/projects.js" defer></script>
     <script src="https://kit.fontawesome.com/f692f130e5.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+

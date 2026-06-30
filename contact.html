@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contato — Mayson Lima</title>
+  <link rel="stylesheet" href="global_styles.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="shortcut icon" href="img/fovicon.png" type="image/x-icon">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <nav class="navegacao">
+    <a href="index.html#inicio" class="nav-brand" aria-label="Página inicial de Mayson Lima">
+      <span class="brand-mark" aria-hidden="true"><img src="img/logo_ML.jpeg" alt=""></span>
+      <span class="brand-title">
+        <span class="brand-name">Mayson Lima</span>
+        <span class="brand-separator" aria-hidden="true">|</span>
+        <span class="brand-role">Full-Stack Developer</span>
+      </span>
+    </a>
+    <ul class="menu">
+      <li><a href="index.html#inicio" class="menu_link">Início</a></li>
+      <li><a href="index.html#sobre" class="menu_link">Sobre</a></li>
+      <li><a href="index.html#projetos" class="menu_link">Projetos</a></li>
+      <li><a href="resume.html" class="menu_link">Resumo</a></li>
+      <li><a href="contact.html" class="menu_link active">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Alternar idioma">
+        <button type="button" class="lang-option is-active" data-lang-target="pt" aria-pressed="true">PT</button>
+        <button type="button" class="lang-option" data-lang-target="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub de Mayson Lima">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn de Mayson Lima">
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+    </div>
+  </nav>
+
+  <main class="contatos" id="contatos-page">
+    <div class="contato_grid">
+      <section class="contato_intro">
+        <div class="contato_eyebrow" id="contactTitle">Contato</div>
+        <h1 class="contatos_titulo" data-i18n="contactHeading">Vamos <br>
+            construir algo.</h1>
+        <p class="contatos_subtitulo" id="contactSubtitle">Aberto a oportunidades como desenvolvedor estagiário ou júnior, projetos web e conversas sobre tecnologia. O jeito mais rápido de falar comigo é por aqui.</p>
+
+        <a class="contato_email" href="https://wa.me/5577991508733" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>+55 77 99150-8733</span>
+        </a>
+
+        <div class="contato_links" aria-label="Links de contato">
+          <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>github.com/MaysonLima</span>
+          </a>
+          <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <span>Mayson Lima</span>
+          </a>
+          <span>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Jacaraci, BA</span>
+          </span>
+        </div>
+      </section>
+
+      <form class="formulario_contato" id="formulario" onsubmit="enviarWhats(event)">
+        <div class="contato_form_row">
+          <div class="grupo_form">
+            <label class="label_form" for="nome" data-i18n="formName">Nome</label>
+            <input placeholder="Seu nome" class="campo_form" id="nome" type="text" autocomplete="name" data-i18n-placeholder="formNamePlaceholder">
+          </div>
+          <div class="grupo_form">
+            <label class="label_form" for="email" data-i18n="formEmail">E-mail</label>
+            <input placeholder="seu@email.com" class="campo_form" id="email" type="email" autocomplete="email" data-i18n-placeholder="formEmailPlaceholder">
+          </div>
+        </div>
+        <div class="grupo_form">
+          <label class="label_form" for="mensagem" data-i18n="formMessage">Mensagem</label>
+          <textarea placeholder="Me conte sobre a oportunidade, projeto ou ideia..." rows="8" class="campo_form" id="mensagem" data-i18n-placeholder="formMessagePlaceholder"></textarea>
+        </div>
+        <button type="submit" class="botao_form" id="sendBtn">
+          <span>Enviar mensagem</span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </button>
+        <p class="contact_protected" data-i18n="contactProtected">Mensagem enviada pelo WhatsApp.</p>
+      </form>
+    </div>
+  </main>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-brand">mayson.lima</div>
+                <div class="footer-sub" data-i18n="footerSub">Software developer, Jacaraci, BA</div>
+            </div>
+            <nav class="footer-center" aria-label="Footer navigation">
+                <a href="index.html#projetos" data-i18n="footerProjects">Projects</a>
+                <a href="resume.html" data-i18n="footerResume">Resumo</a>
+                <a href="index.html#sobre" data-i18n="footerAbout">About</a>
+            </nav>
+            <div class="footer-right">
+                <a href="https://github.com/MaysonLima" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/maysonlima/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="contact.html" data-i18n="footerEmail">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2026 Mayson Lima</div>
+            <div data-i18n="footerBuilt">Designed and built from scratch.</div>
+        </div>
+    </footer>
+
+  <script src="global_script.js" defer></script>
+  <script src="js/pages/contact.js" defer></script>
+  <script src="https://kit.fontawesome.com/f692f130e5.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
