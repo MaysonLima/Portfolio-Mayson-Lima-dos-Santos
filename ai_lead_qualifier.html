@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -27,7 +27,7 @@
             <li><a href="index.html#inicio" class="menu_link">Início</a></li>
             <li><a href="index.html#sobre" class="menu_link">Sobre</a></li>
             <li><a href="index.html#projetos" class="menu_link active">Projetos</a></li>
-            <li><a href="resume.html" class="menu_link">Resumo</a></li>
+            <li><a href="resume.html" class="menu_link">Currículo</a></li>
             <li><a href="contact.html" class="menu_link">Contato</a></li>
         </ul>
         <div class="nav-actions">
@@ -47,30 +47,30 @@
     <main class="projeto_main">
         <section class="projeto_hero">
             <div class="projeto_card_info">
-                <span class="projeto_tag">Projeto full stack com IA</span>
+                <span class="projeto_tag" data-i18n="aiPageTag">Projeto full stack com IA</span>
                 <h1 class="projeto_titulo">AI Lead Qualifier</h1>
-                <p class="projeto_resumo">
+                <p class="projeto_resumo" data-i18n="aiPageSummary">
                     O AI Lead Qualifier é um projeto de portfólio que simula um fluxo completo de qualificação de leads com IA.
                     O frontend em React envia os dados para uma API em Node.js e Express, que analisa a necessidade comercial e retorna um parecer pronto.
                 </p>
 
                 <div class="projeto_acoes">
-                    <a href="https://github.com/MaysonLima/AI-Lead-Qualifier" class="botao_cv">Repositório no GitHub</a>
-                    <a href="index.html#projetos" class="botao_secundario">Voltar aos projetos</a>
+                    <a href="https://github.com/MaysonLima/AI-Lead-Qualifier" class="botao_cv" data-i18n="projectRepoBtn">Repositório no GitHub</a>
+                    <a href="index.html#projetos" class="botao_secundario" data-i18n="projectBackBtn">Voltar aos projetos</a>
                 </div>
 
                 <div class="projeto_lista_destaque">
                     <article>
-                        <h3>Fluxo completo</h3>
-                        <p>Do cadastro do lead à análise da necessidade comercial, com resposta estruturada e fácil de ler.</p>
+                        <h3 data-i18n="aiPageHighlight1Title">Fluxo completo</h3>
+                        <p data-i18n="aiPageHighlight1Text">Do cadastro do lead à análise da necessidade comercial, com resposta estruturada e fácil de ler.</p>
                     </article>
                     <article>
-                        <h3>IA em dois modos</h3>
-                        <p>Simula o processo com provider mock para testes e também integra com OpenAI para resultados reais.</p>
+                        <h3 data-i18n="aiPageHighlight2Title">IA em dois modos</h3>
+                        <p data-i18n="aiPageHighlight2Text">Simula o processo com provider mock para testes e também integra com OpenAI para resultados reais.</p>
                     </article>
                     <article>
-                        <h3>Entrega prática</h3>
-                        <p>Gera status, score, motivo e abordagem sugerida para tornar a qualificação de leads mais eficiente.</p>
+                        <h3 data-i18n="aiPageHighlight3Title">Entrega prática</h3>
+                        <p data-i18n="aiPageHighlight3Text">Gera status, score, motivo e abordagem sugerida para tornar a qualificação de leads mais eficiente.</p>
                     </article>
                 </div>
             </div>
@@ -81,27 +81,27 @@
         </section>
 
         <section class="projeto_bloco">
-            <h2>O que o AI Lead Qualifier entrega</h2>
+            <h2 data-i18n="aiPageDeliverTitle">O que o AI Lead Qualifier entrega</h2>
             <div class="projeto_lista_destaque">
                 <article>
-                    <h3>Formulário intuitivo</h3>
-                    <p>Pergunta o nome da empresa e a necessidade comercial de forma clara e direta.</p>
+                    <h3 data-i18n="aiPageDeliver1Title">Formulário intuitivo</h3>
+                    <p data-i18n="aiPageDeliver1Text">Pergunta o nome da empresa e a necessidade comercial de forma clara e direta.</p>
                 </article>
                 <article>
-                    <h3>Análise automática</h3>
-                    <p>Processa os dados no backend e devolve uma resposta estruturada com recomendação.</p>
+                    <h3 data-i18n="aiPageDeliver2Title">Análise automática</h3>
+                    <p data-i18n="aiPageDeliver2Text">Processa os dados no backend e devolve uma resposta estruturada com recomendação.</p>
                 </article>
                 <article>
-                    <h3>Resultados prontos</h3>
-                    <p>Apresenta score, status, motivo e abordagem sugerida para apoiar decisões comerciais.</p>
+                    <h3 data-i18n="aiPageDeliver3Title">Resultados prontos</h3>
+                    <p data-i18n="aiPageDeliver3Text">Apresenta score, status, motivo e abordagem sugerida para apoiar decisões comerciais.</p>
                 </article>
             </div>
         </section>
 
         <section class="projeto_grade">
             <article class="projeto_bloco">
-                <h2>Sobre o projeto</h2>
-                <p>
+                <h2 data-i18n="aiPageAboutTitle">Sobre o projeto</h2>
+                <p data-i18n="aiPageAboutText">
                     A proposta do projeto e demonstrar um caso de uso realista de IA aplicada a vendas. A aplicacao
                     recebe o nome da empresa e a necessidade do lead, processa esse contexto no backend e retorna um
                     parecer pronto para leitura, ajudando a visualizar como um time comercial pode automatizar a triagem
@@ -111,26 +111,26 @@
                 <div class="projeto_fluxo">
                     <article>
                         <span>01</span>
-                        <p>O usuario preenche o nome da empresa e descreve a necessidade comercial.</p>
+                        <p data-i18n="aiPageFlow1">O usuário preenche o nome da empresa e descreve a necessidade comercial.</p>
                     </article>
                     <article>
                         <span>02</span>
-                        <p>O frontend React envia os dados para a rota <strong>POST /qualify-lead</strong>.</p>
+                        <p data-i18n="aiPageFlow2">O frontend React envia os dados para a rota <strong>POST /qualify-lead</strong>.</p>
                     </article>
                     <article>
                         <span>03</span>
-                        <p>A API processa a qualificacao com provider mock ou com a OpenAI API.</p>
+                        <p data-i18n="aiPageFlow3">A API processa a qualificação com provider mock ou com a OpenAI API.</p>
                     </article>
                     <article>
                         <span>04</span>
-                        <p>O sistema devolve status, score, reason e suggestedApproach de forma estruturada.</p>
+                        <p data-i18n="aiPageFlow4">O sistema devolve status, score, reason e suggestedApproach de forma estruturada.</p>
                     </article>
                 </div>
             </article>
 
             <article class="projeto_bloco">
-                <h2>Tecnologias utilizadas</h2>
-                <p>
+                <h2 data-i18n="projectTechTitle">Tecnologias utilizadas</h2>
+                <p data-i18n="aiPageTechText">
                     O projeto combina backend, frontend e integracao com IA para mostrar uma arquitetura modular e
                     pronta para evolucao. Alem da interface React, a aplicacao possui validacao de entrada, variaveis de
                     ambiente, provider configuravel e comunicacao local entre Vite e Express.
@@ -150,8 +150,8 @@
         </section>
 
         <section class="projeto_bloco">
-            <h2>Galeria do projeto</h2>
-            <p>
+            <h2 data-i18n="projectGalleryTitle">Galeria do projeto</h2>
+            <p data-i18n="aiPageGalleryText">
                 As imagens abaixo mostram a interface principal da aplicacao, um exemplo de retorno nao qualificado e
                 um exemplo de lead qualificado com score, justificativa e sugestao de abordagem.
             </p>
@@ -159,17 +159,17 @@
             <div class="galeria_grade">
                 <figure class="galeria_item">
                     <img src="image_ex01.png" alt="Tela principal do AI Lead Qualifier">
-                    <figcaption>Visao geral da interface com formulario de entrada, explicacao do fluxo e painel de resultado.</figcaption>
+                    <figcaption data-i18n="aiPageGallery1">Visão geral da interface com formulário de entrada, explicação do fluxo e painel de resultado.</figcaption>
                 </figure>
 
                 <figure class="galeria_item">
                     <img src="fail_exemple.png" alt="Exemplo de lead nao qualificado no AI Lead Qualifier">
-                    <figcaption>Exemplo de resposta com score baixo, status <strong>not qualified</strong> e sugestao de abordagem.</figcaption>
+                    <figcaption data-i18n="aiPageGallery2">Exemplo de resposta com score baixo, status <strong>not qualified</strong> e sugestão de abordagem.</figcaption>
                 </figure>
 
                 <figure class="galeria_item">
                     <img src="sucess_exemple.png" alt="Exemplo de lead qualificado no AI Lead Qualifier">
-                    <figcaption>Exemplo de lead com score alto, status <strong>qualified</strong> e justificativa comercial.</figcaption>
+                    <figcaption data-i18n="aiPageGallery3">Exemplo de lead com score alto, status <strong>qualified</strong> e justificativa comercial.</figcaption>
                 </figure>
             </div>
         </section>
@@ -184,7 +184,7 @@
             </div>
             <nav class="footer-center" aria-label="Footer navigation">
                 <a href="index.html#projetos" data-i18n="footerProjects">Projects</a>
-                <a href="resume.html" data-i18n="footerResume">Resumo</a>
+                <a href="resume.html" data-i18n="footerResume">Currículo</a>
                 <a href="index.html#sobre" data-i18n="footerAbout">About</a>
             </nav>
             <div class="footer-right">

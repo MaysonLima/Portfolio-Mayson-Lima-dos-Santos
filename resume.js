@@ -12,8 +12,19 @@
 
         if(resumeEyebrow) resumeEyebrow.textContent = data.resumeEyebrow;
         if(resumeIntro) resumeIntro.textContent = data.resumeIntro;
-        if(resumeDownload) resumeDownload.textContent = data.resumeDownload;
-        if(resumeOpen) resumeOpen.textContent = data.resumeOpen;
+        if(resumeDownload) {
+            resumeDownload.textContent = data.resumeDownload;
+            if(data.resumeFile) {
+                resumeDownload.href = data.resumeFile;
+                resumeDownload.download = data.resumeFile;
+            }
+        }
+        if(resumeOpen) {
+            resumeOpen.textContent = data.resumeOpen;
+            if(data.resumeFile) {
+                resumeOpen.href = data.resumeFile;
+            }
+        }
 
         document.querySelectorAll('.resume_preview').forEach((img, index) => {
             const nextImage = data.resumeImages && data.resumeImages[index];
