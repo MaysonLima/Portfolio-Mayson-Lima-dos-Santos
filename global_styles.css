@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -2827,7 +2827,7 @@ textarea.campo_form{
 }
 
 .scroll-indicator-text::after{
-    content: "↓";
+    content: "";
     display: inline-block;
     font-size: 1.1em;
     line-height: 1;
@@ -3756,14 +3756,14 @@ body[data-lang="pt"] .contatos_titulo{
         box-shadow 0.24s ease;
     background:
         linear-gradient(rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.08)),
-        url("flags/Brazil-nav.webp") center / cover no-repeat;
+        url("Brazil-nav.webp") center / cover no-repeat;
 }
 
 body[data-lang="en"] .lang-switch::before{
     transform: translateX(calc(100% + 0.08rem));
     background:
         linear-gradient(rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.08)),
-        url("flags/Usa-nav.webp") center / cover no-repeat;
+        url("Usa-nav.webp") center / cover no-repeat;
 }
 
 .lang-switch::after{

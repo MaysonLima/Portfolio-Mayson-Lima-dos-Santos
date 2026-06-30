@@ -120,8 +120,8 @@ const translations = {
         resumeDownload: 'Download PDF',
         resumeOpen: 'Abrir em nova aba',
         resumeImages: [
-            { src: 'Cv_PT_BR/1.jpg', alt: 'Currículo de Mayson Lima em português, página 1' },
-            { src: 'Cv_PT_BR/2.jpg', alt: 'Currículo de Mayson Lima em português, página 2' }
+            { src: '1 pt-br.jpg', alt: 'Currículo de Mayson Lima em português, página 1' },
+            { src: '2 pt-br.jpg', alt: 'Currículo de Mayson Lima em português, página 2' }
         ],
         moreEyebrow: 'Mais sobre mim',
         moreTitle: 'Desenvolvedor em formação, construindo com intenção.',
@@ -187,8 +187,8 @@ const translations = {
         resumeDownload: 'Download PDF',
         resumeOpen: 'Open in new tab',
         resumeImages: [
-            { src: 'Cv_En/1 (1).jpg', alt: 'Mayson Lima resume in English, page 1' },
-            { src: 'Cv_En/2 (1).jpg', alt: 'Mayson Lima resume in English, page 2' }
+            { src: '1 en (1).jpg', alt: 'Mayson Lima resume in English, page 1' },
+            { src: '2 en (1).jpg', alt: 'Mayson Lima resume in English, page 2' }
         ],
         moreEyebrow: 'More about me',
         moreTitle: 'A developer in progress, building with intention.',
